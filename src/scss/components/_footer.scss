@@ -1,0 +1,77 @@
+@import '../base/vars';
+
+.footer {
+	padding: 4rem 0 6.6rem;
+
+	// .footer__content
+	&__content {
+		color: $deepPurple;
+		margin: 0 0 5rem 0;
+	}
+
+	// .footer__title
+	&__title {
+		font-weight: 700;
+		font-size: 1.8rem;
+		margin: 0 0 1em 0;
+	}
+
+	// .footer__txt
+	&__txt {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+
+		&:not(:last-child) {
+			margin: 0 0 4rem 0;
+		}
+	}
+
+	// .footer__copyrights
+	&__copyrights {
+		font-size: 1.2rem;
+		color: $grey;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.footer {
+		padding: 4.8rem 0;
+	
+		// .footer__content
+		&__content {
+			margin: 0 0 5.6rem 0;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.footer {
+		padding: 5.5rem 0 14.5rem;
+	
+		// .footer__content
+		&__content {
+			margin: 0 0 7.2rem 0;
+		}
+
+			// .footer__txt
+		&__txt {
+			font-size: 1.8rem;
+			line-height: 3.2rem;
+
+			&:not(:last-child) {
+				margin: 0 0 6rem 0;
+			}
+		}
+
+		// .footer__copyrights
+		&__copyrights {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.footer {
+		padding: 5.5rem 0;
+	}
+}

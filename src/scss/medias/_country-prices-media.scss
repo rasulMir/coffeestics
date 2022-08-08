@@ -1,0 +1,17 @@
+
+@media screen and (min-width: 640px) {
+	.country-prices {
+
+		&__filter-btn {
+		
+			&:nth-child(1):before {
+				content: 'Top countries for';
+			}
+
+			&:nth-child(2)::after {
+				content: 'cappucino price';
+			}
+			
+		}
+	}
+}

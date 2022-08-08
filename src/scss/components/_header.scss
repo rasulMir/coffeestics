@@ -1,0 +1,168 @@
+@import '../base/vars';
+
+.navbar {
+
+	&-inner-wrap  {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 24px 0 0 0;
+	}
+
+	&__logo {
+		color: $black;
+		font-size: 1.4rem;
+		display: flex;
+		justify-content: stretch;
+		align-items: center;
+	}
+
+	&__img-logo {
+		position: relative;
+		flex: 0 0 2.7rem;
+		min-height: 2.7rem;
+
+		& > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__logo-txt {
+		flex: 1 0;
+		padding: 0 0 0 .82rem;
+		font-weight: 800;
+	}
+
+	&__menu-icon {
+		cursor: pointer;
+		position: relative;
+		width: 18px;
+		height: 12px;
+		z-index: 9999;
+
+		&::before,
+		&::after {
+			content: '';
+		}
+
+		& > span,
+		&::before,
+		&::after {
+			width: 100%;
+			height: .2rem;
+			position: absolute;
+			left: 0;
+			background-color: $deepRed;
+			border-radius: 2px;
+			transition: all .3s linear;
+		}
+
+		& > span {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		&_active {
+
+			& > span {
+				opacity: 0;
+			}
+
+			&::before {
+				transform-origin: left;
+				transform: rotateZ(34deg);
+			}
+
+			&::after {
+				transform-origin: left;
+				transform: rotateZ(-34deg);
+			}
+		}
+	}
+
+	&__menu {
+		position: absolute;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		height: 100vh;
+		background-color: $white;
+		z-index: 999;
+		padding: 9rem 0;
+		transition: all .3s linear;
+
+		&_active {
+			right: 0;
+		}
+	}
+
+	&__menu-list {
+		color: $deepRed;
+		font-weight: 600;
+		text-transform: capitalize;
+		font-size: 16px;
+	}
+
+	&__menu-item {
+		position: relative;
+		cursor: pointer;
+		&:not(:last-child) {
+			margin: 0 0 3rem 0;
+		}
+	}
+
+	&__menu-drinks {
+		position: relative;
+
+		&_active {
+			color: $grey;
+		}
+	}
+
+	&__menu-link {
+		cursor: pointer;
+	}
+
+	&__menu-sublist {
+		padding: 24px;
+		font-size: 1.4rem;
+		color: $deepRed;
+		position: absolute;
+		width: 100%;
+		top: 19px;
+		left: 0;
+		transform-origin: top;
+		transform: scaleY(0);
+		transition: all .3s ease-in;
+		z-index: 11;
+
+		&_active {
+			top: 19px;
+			transform: scaleY(1);
+		}
+	}
+
+	&__menu-subitem {
+		&:not(:last-child) {
+			margin: 0 0 2.4rem 0;
+		}
+
+		&_active {
+			color: $deepPurple;
+		}
+	}
+}
+
+@import '../medias/header-media';

@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 640px) {
+	.coffees {
+
+
+		&__name {
+			font-size: 1.4rem;
+		}
+	}
+
+	.coffees-slider {
+		padding: 0 2.5rem;
+		& > .slick-arrow {
+			min-width: 4rem;
+			min-height: 4rem;
+			font-size: 1.879rem;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.coffees {
+		padding: 5rem 0 0 0;
+
+		&__name {
+			font-size: 1.6rem;
+		}
+	}
+
+	.coffees-slider {
+		& > .slick-arrow {
+			min-width: 4.8rem;
+			min-height: 4.8rem;
+		}
+	}
+}

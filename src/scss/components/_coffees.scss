@@ -1,0 +1,39 @@
+@import '../base/vars';
+
+.coffees {
+	padding: 3.5rem 0 0 0;
+
+	// .coffees__card
+
+	&__card {
+		padding: 0 1.4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+	}
+
+	// .coffees__img
+
+	&__img {
+		min-width: 5.7rem;
+		flex: 1 0 5.7rem;
+		border: .1rem solid $grey80;
+		border-radius: 50%;
+		margin: 0 0 1rem 0;
+	}
+
+	// .coffees__name
+
+	&__name {
+		font-size: 1.2rem;
+		text-transform: capitalize;
+	}
+}
+
+.coffees-slider {
+	position: relative;
+}
+
+@import '../medias/coffees-media';

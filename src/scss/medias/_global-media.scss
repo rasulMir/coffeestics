@@ -1,0 +1,161 @@
+
+
+@media screen and (min-width: 640px) {
+	.container {
+		padding: 0 24px;
+	}
+
+	.top-title {
+		display: none;
+	}
+
+	.top-filter-btn {
+		position: relative;
+
+		&::before,
+		&::after {
+			min-width: max-content;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			font-weight: 600;
+			font-size: 1.6rem;
+			color: $deepPurple;
+		}
+
+		&:nth-child(1):before {
+			right: calc(1.2rem + 100%);
+		}
+
+		&:nth-child(2)::after {
+			left: calc(1.2rem + 100%);
+		}
+	}
+
+	.prices {
+		padding: 3.5rem 0 0 0;
+
+		&__search {
+			margin: 0 0 1.75rem 0;
+		}
+
+		// .country-prices__search-lbl
+		&__search-lbl {
+			flex: 0 0 469 / 596 * 100%;
+			margin-right: 1.7rem;
+		}
+	
+		// .country-prices__search-btn
+		&__search-btn {
+			flex: 1 0;
+			justify-content: flex-start;
+
+
+			& > i {
+				position: relative;
+				padding: 0 1rem 0 0;
+
+				&::after {
+					content: 'Locate me';
+					min-width: max-content;
+					position: absolute;
+					top: 50%;
+					left: 100%;
+					transform: translateY(-50%);
+					font-size: 1.4rem;
+					font-family: 'Montserrat';
+					color: inherit;
+				}
+			}
+		}
+	
+		&__card {
+			flex: 0 0 22.5%;
+		}
+	
+		&__img-flag {
+			margin: 0 0 2.4rem;
+			width: 3.2rem;
+			flex: 0 0 2.2rem;
+		}
+	
+		&__card-name {
+			font-size: 1.6rem;
+			margin: 0 0 2rem 0;
+		}
+	
+		&__card-city {
+			font-size: 1.2rem;
+		}
+	
+		&__card-price {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		padding: 0 42px;
+	}
+
+	.top-filter-btn {
+		font-size: 2rem;
+		&::before,
+		&::after {
+			font-size: 2rem;
+		}
+	}
+
+	.prices {
+		padding: 3.5rem 0 0 0;
+
+		&__search {
+			margin: 0 0 3rem 0;
+			width: 656 / 976 * 100%;
+		}
+
+		// .country-prices__search-lbl
+		&__search-lbl {
+			flex: 0 0 469 / 596 * 100%;
+			margin-right: 1.7rem;
+		}
+
+		// .country-prices__search-inp
+		&__search-inp {
+			font-size: 1.6rem;
+		}
+	
+		// .country-prices__search-btn
+		&__search-btn {
+			flex: 1 0;
+
+			& > i {
+				&::after {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	
+		&__card {
+			margin: 3rem 0;
+			flex: 0 0 18.5%;
+		}
+	
+		&__card-name {
+			font-size: 2rem;
+		}
+	
+		&__card-city {
+			font-size: 1.4rem;
+		}
+	
+		&__card-price {
+			font-size: 2.4rem;
+		}
+	}
+
+	.show-more-btn {
+		font-size: 1.6rem;
+	}
+}

@@ -1,0 +1,30 @@
+@import '../base/vars';
+
+
+.promo {
+	padding: 2.4rem 0 0 0;
+
+	// .promo__inner-wrap
+	&__inner-wrap {
+	}
+
+	// .promo__title
+	&__title {
+		margin: 0 0 1em 0;
+		font-weight: 700;
+		font-size: 1.8rem;
+	}
+
+	// .promo__txt
+	&__txt {
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+
+		& > span {
+			font-weight: 700;
+		}
+	}
+}
+
+@import '../medias/promo-media';

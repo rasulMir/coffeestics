@@ -1,0 +1,102 @@
+@import '../base/vars';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/root";
+@import '../../../node_modules/bootstrap/scss/dropdown';
+
+.order {
+	padding: 3rem 0 0 0;
+
+	& > .container:nth-child(2) {
+		background-image: linear-gradient(to bottom, $blue200 , rgba($blue200, .5) );
+	}
+
+	// .order__top-txt
+	&__top-txt {
+		margin: 0 0 3rem 0;
+		color: $grey;
+		font-size: 1rem;
+		line-height: 1.8em;
+	}
+
+	// .order__form-wrap
+	&__form-wrap {
+		padding: 2.4rem 0;
+		color: $deepPurple;
+	}
+
+	// .order__form
+	&__form {
+	}
+
+	// .order__title
+	&__title {
+		font-weight: 700;
+		font-size: 1.8rem;
+		margin: 0 0 2.4rem 0;
+	}
+
+	// .order__txt
+	&__txt {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+		margin: 0 0 2.4rem 0;
+	}
+
+	// .order__lbl
+	&__lbl,
+	&__dropdown-btn {
+		margin: 0 0 2.4rem 0;
+		padding: 1.2rem;
+		display: block;
+		width: 100%;
+		background-color: $white;
+		border: .1rem solid $grey150;
+		border-radius: .8rem;
+	}
+
+	// .order__inp
+	&__inp {
+		width: 100%;
+		background-color: transparent;
+		border: none;
+		font-size: 1.4rem;
+	}
+
+	// .order__form-btn
+	&__form-btn {
+		width: 100%;
+		background-color: $blue;
+		font-weight: 600;
+		font-size: 1.6rem;
+		color: $white;
+		text-align: center;
+		padding: 1em;
+		border: none;
+		border-radius: .8rem;
+	}
+
+	&__dropdown {
+		margin: 0 0 2.4rem 0;
+	}
+
+	&__dropdown-btn {
+		position: relative;
+		color: $grey;
+		text-align: left;
+		margin: 0;
+		display: block;
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			right: 1.2rem;
+			transform: translateY(-50%);
+			margin: 0;
+		}
+	}
+}
+
+@import '../medias/order-media';

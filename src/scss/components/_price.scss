@@ -1,0 +1,128 @@
+@import '../base/vars';
+
+.price {
+	padding: 4rem 0 0 0;
+
+	// .price__inner-wrap
+	&__inner-wrap {
+	}
+
+	// .price__top-currencies
+	&__top-currencies {
+		margin: 0 0 4rem 0;
+	}
+
+	// .price__currency-btn
+	&__currency-btn {
+	}
+
+	// .price__card
+	&__card {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	// .price__country-currency
+	&__country-currency {
+		padding: 0 1rem;
+		flex: 0 0 45%;
+		order: 2;
+		text-align: center;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	// .price__country-top-txt
+	&__country-top-txt {
+		font-size: 1.4rem;
+		margin: 0 0 1rem 0;
+		text-transform: uppercase;
+	}
+
+	// .price__country-price
+	&__country-price {
+		font-weight: 600;
+		font-size: 2.4rem;
+		margin: 0 0 1.6rem 0;
+	}
+
+	// .price__country-img-flag
+	&__country-img-flag {
+		margin: 0 0 1.6rem 0;
+		flex: 1 0 2.5rem;
+		min-width: 4rem;
+
+		& > img {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	// .price__country-city
+	&__country-city {
+		font-size: 1.2rem;
+	}
+
+	// .price__coffee
+	&__coffee {
+		padding: 0 1rem;
+		margin: 0 0 3rem 0;
+		order: 1;
+		flex: 0 0 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	// .price__coffee-img
+	&__coffee-img {
+		margin: 0 0 1.3rem 0;
+		min-width: 12rem;
+		flex: 1 0 12rem;
+		position: relative;
+		background-color: $deepRed;
+		border-radius: 50%;
+
+		& > img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 80%;
+		}
+	}
+
+	// .price__coffee-name
+	&__coffee-name {
+		margin: 0 0 1rem 0;
+		font-weight: 600;
+		font-size: 1.4rem;
+		text-transform: capitalize;
+	}
+
+	// .price__coffee-link
+	&__coffee-link {
+		font-size: 1rem;
+		color: $grey;
+	}
+}
+
+.price-slider {
+	position: relative;
+	
+	& > .price-slider-arrow {
+		min-width: 4rem;
+		min-height: 4rem;
+		top: 18%;
+		font-size: 1.867rem;
+	}
+}
+
+
+@import '../medias/price-media';

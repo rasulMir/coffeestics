@@ -1,0 +1,19 @@
+
+@media screen and (min-width: 640px) {
+	
+	.city-prices {
+		padding: 7rem 0 0 0;
+		&__filter-btn {
+		
+			&:nth-child(1):before {
+				content: 'Top cities for';
+			}
+
+			&:nth-child(2)::after {
+				content: 'cappucino price';
+			}
+			
+		}
+	}
+
+}
