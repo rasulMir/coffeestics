@@ -55,7 +55,7 @@
     "webpack-merge": "^5.8.0"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">14.2.0"
   },
   "keywords": [
     "webpack",
@@ -83,6 +83,7 @@
   "dependencies": {
     "bootstrap": "^5.2.0",
     "jquery": "^3.6.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "uuid": "^8.3.2"
   }
 }
