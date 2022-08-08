@@ -55,7 +55,7 @@
     "webpack-merge": "^5.8.0"
   },
   "engines": {
-    "node": ">14.2.0"
+    "node": "^>14.2.0"
   },
   "keywords": [
     "webpack",
