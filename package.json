@@ -1,6 +1,6 @@
 {
-  "author": "WeAreAthlon <hello@weareathlon.com> (https://www.weareathlon.com)",
-  "name": "@weareathlon/frontend-webpack-boilerplate",
+  "author": "Rasul Myrzakulov <rasulmyrzakulov@gmail.com>",
+  "name": "coffeestics",
   "version": "5.13.0",
   "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
   "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
@@ -55,7 +55,7 @@
     "webpack-merge": "^5.8.0"
   },
   "engines": {
-    "node": "^12 || >=14"
+    "node": ">=14"
   },
   "keywords": [
     "webpack",
